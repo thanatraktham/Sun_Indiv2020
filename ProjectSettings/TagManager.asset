@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Obstacle
+  - Rail
+  - LeftWall
+  - RightWall
+  - Wall
+  - ForwardRail
+  - SidewayRail
+  - For2RightRail
+  - Left2ForRail
+  - For2LeftRail
+  - Right2ForRail
+  - Ground
+  - DeathWall
+  - Health
+  - SpawnWall
+  - Cow
+  - Cart
+  - CartTunnel
+  - SlowBuff
+  - MovableObstacle
+  - Snowball
+  - Water
+  - Ice
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
