@@ -95,18 +95,19 @@ public class Pointspawn : MonoBehaviour
                 }
             } else if (!obj_stillWaiting) {
                 
+                //-------------------- EMPTY --------------------//
+                if( random <= 235){
+                    set = 0;
+                    obj_waitForSpawn = true;
+                    return;
+                }
                 //-----------------------------------------------------//
                 //-------------------- FOREST PART --------------------//
                 //-----------------------------------------------------//
                 if (GameManager.getMap_status() == 0) {
                     
-                    //-------------------- EMPTY --------------------//
-                    if( random <= 240){
-                        obj_waitForSpawn = true;
-                        return;
-                    }
                     //-------------------- TREE --------------------//
-                    else if(random > 275){
+                    if(random > 275){
                         GameObject treeClone1 =  Instantiate(tree) as GameObject;
                         GameObject treeClone2 =  Instantiate(tree) as GameObject;
                         
@@ -210,12 +211,8 @@ public class Pointspawn : MonoBehaviour
                 //-----------------------------------------------------//
                 else if (GameManager.getMap_status() == 1) {
 
-                    //-------------------- EMPTY ----------------------//
-                    if(random < 230){
-                        return;
-                    }
                     //-------------------- CACTUS --------------------//
-                    else if (random > 280) {
+                    if (random > 280) {
                         GameObject cactusClone1 =  Instantiate(cactus) as GameObject;
                         GameObject cactusClone2 =  Instantiate(cactus) as GameObject;
 
@@ -439,12 +436,7 @@ public class Pointspawn : MonoBehaviour
                     //-------------------- SANTA --------------------//
                     else if(random > 240){
                         spawnCartType(santa, 0.5f);
-                    }
-                    //-------------------- COW --------------------//
-                    else if (random > 245) {
-                        spawnGeneralType(cow, 1.5f);
-                    }
-                    
+                    }                    
                     //-------------------- SNOW MAN --------------------//
                     else if (random > 235) {
                         GameObject snowmanClone = Instantiate(snowman) as GameObject;

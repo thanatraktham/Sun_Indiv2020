@@ -12,7 +12,6 @@ public class PlayerMove : MonoBehaviour
     
     private bool alreadyMove;
     private int direction;
-    private int isGameStart;
     private Vector3 placeLeft;
     private Vector3 placeRight;
     private Vector3 placeFront;
@@ -22,7 +21,6 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isGameStart = 0;
         placeLeft = new Vector3(-2f, 0f, 0f);
         placeRight = new Vector3(2f, 0f, 0f);
         placeFront = new Vector3(0f, 0f, 2f);

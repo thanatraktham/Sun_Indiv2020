@@ -11,8 +11,6 @@ public class MoonLight : MonoBehaviour
 
     [SerializeField]
     private float luminositySteps ; // factor when increasing / decreasing
-    private int round = 0;
-    private int dayOrNot;
     private int lightDirection;
     private int scoreMod;
 
